@@ -1,4 +1,24 @@
 
+import time
+import nltk
+nltk.download('punkt')
+nltk.download('vader_lexicon')
+nltk.download('stopwords')
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from nltk import tokenize
+import pandas as pd
+pd.options.mode.chained_assignment = None
+import os
+import pandas as pd
+import os.path
+from os import path
+
+import numpy as np
+from pandarallel import pandarallel
+
+
 FIND_WORDS = ['covid',
               'guidance',
               'outlook']
